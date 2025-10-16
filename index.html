@@ -6,9 +6,6 @@
   <title>Commerciale HACCP – Mappa Italia</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-  <!-- Google Maps API JS con la tua API key -->
-  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADlGMEfGgcexjknEwLFsW_DlsI0uh6LJE&libraries=places&callback=initMap"></script>
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
@@ -22,8 +19,11 @@
     <a href="#stats">Statistiche</a>
   </nav>
   <section id="panel" class="hidden"></section>
+
+  <!-- SCRIPT Google Maps API DEVE venire PRIMA dello script js locale -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADlGMEfGgcexjknEwLFsW_DlsI0uh6LJE&libraries=places&callback=initMap"></script>
+  <script src="script.js"></script>
   <script>
-    // Questo REGISTRA il service worker per PWA!
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js');
