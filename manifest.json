@@ -1,0 +1,21 @@
+{
+  "name": "Gestionale Commerciale HACCP",
+  "short_name": "HACCP CRM",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4285f4",
+  "description": "Mappa, database e CRM commerciali per HACCP e Sicurezza Italia.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
