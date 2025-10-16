@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Commerciale HACCP – Mappa Italia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <script defer src="script.js"></script>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=TUA_API_KEY&libraries=places&callback=initMap"></script>
+</head>
+<body>
+  <header>
+    <h1>Commerciale HACCP</h1>
+    <input id="search" type="text" placeholder="Cerca un locale in Italia…">
+  </header>
+  <main id="map"></main>
+  <nav id="bottom-nav">
+    <a href="#map">Mappa</a>
+    <a href="#list">Elenco</a>
+    <a href="#stats">Statistiche</a>
+  </nav>
+  <section id="panel" class="hidden"></section>
+</body>
+</html>
