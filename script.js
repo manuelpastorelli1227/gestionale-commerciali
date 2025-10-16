@@ -163,3 +163,6 @@ function deletePlace(id){
   saveDatabase();
   document.getElementById('panel').classList.remove('visible');
 }
+// ESPOSTA PER GOOGLE MAPS
+window.initMap = initMap;
+
